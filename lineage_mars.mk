@@ -15,6 +15,16 @@ $(call inherit-product, device/xiaomi/mars/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
+TARGET_HAS_UDFPS := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_ENABLE_BLUR := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+RICE_CHIPSET := Snapdragon® 888
+RICE_MAINTAINER := FlowerSea/Crisp
+SUSHI_BOOTANIMATION := 1440
+TARGET_ENABLE_BLUR := false
+TARGET_BUILD_APERTURE_CAMERA := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := mars
