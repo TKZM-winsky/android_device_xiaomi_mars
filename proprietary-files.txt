@@ -1,4 +1,4 @@
-# These proprietary files are extracted from star MIUI V13.0.13.0.SKACNXM, note the pinned blobs
+# These proprietary files are extracted from miui_STAR_V14.0.6.0.TKACNXM, note the pinned blobs
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -43,7 +43,6 @@ vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
 vendor/lib/rfsa/adsp/libQnnHtpSkel.so
 vendor/lib/rfsa/adsp/libSuperSensor_skel.so
 vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
-vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so
 vendor/lib/rfsa/adsp/libVppQnnHtp.so
 vendor/lib/rfsa/adsp/libadsp_jpege_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -62,8 +61,6 @@ vendor/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_mfnr_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_sfnr_cdsp_skel.so
-vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so
-vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsnpe_htp_v65_skel.so
@@ -142,6 +139,7 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/hw/camera.xiaomi.so
+vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/HDR10plus.so
 vendor/lib64/com.qti.chiusecaseselector.so
@@ -184,11 +182,9 @@ vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/libAF.so
 vendor/lib64/libBlinkStub.so
 vendor/lib64/libFlickerDet.so
-vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libMegviiFacepp-0.5.2.so
 vendor/lib64/libSNPE.so
-vendor/lib64/libSuperSensor.so
 vendor/lib64/libSuperSensorCPU.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libalAILDC.so
@@ -276,9 +272,6 @@ vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
-
-# Camera - from miui_STAR_V13.0.9.0.SKACNXM
-vendor/lib64/hw/camera.qcom.so|e274865851a3e26251774b4bd7f314f75a642c04
 
 # Camera-arcsoft
 vendor/lib64/libarcsoft_beautyshot.so
@@ -588,28 +581,22 @@ vendor/etc/mdss_dsi_k2_38_08_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_k2_38_08_0a_mp_dsc_cmd_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
 
-# Fingerprint
--vendor/etc/vintf/manifest/fod.xml
-vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.lahaina.so
-vendor/lib64/com.fingerprints.extension@3.0.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
+# Fingerprint - from miui_STAR_V13.0.13.0.SKACNXM
+-vendor/etc/vintf/manifest/fod.xml|0787f763410fce0aae90a3afd807e9fdb2e6ccc4
+vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.lahaina.so|ff22a59c5dd58b83b0faaac74255d2cba7ebab11
+vendor/lib64/com.fingerprints.extension@3.0.so|9e9bf48b9dff08f500734027f7bb5e382df69fef
+vendor/lib64/libgf_hal.so|f12f750d31e94a18fc8b6027340c7a0e2c6a31e5
+vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so|ab271b272f9cf53ca65ab1e457d5cd8ddebc87f7
 
-# Fingerprint dtool
-vendor/bin/hw/vendor.xiaomi.hardware.dtool@1.0-service
-vendor/etc/init/vendor.xiaomi.hardware.dtool@1.0-service.rc
-vendor/lib64/vendor.xiaomi.hardware.dtool@1.0.so
-
-# HotwordEnrollment - from V13.0.2.0.SKAMIXM
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|b3c17357a9a6aaf796e9181742ba4865bcfcb517
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|e248de691af3b72630b4b062a46e302d82c7ec45
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
-system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
+# Fingerprint dtool - from miui_STAR_V13.0.13.0.SKACNXM
+vendor/bin/hw/vendor.xiaomi.hardware.dtool@1.0-service|d97179ba0ee127489b440c782829d4a12e41bcb4
+vendor/etc/init/vendor.xiaomi.hardware.dtool@1.0-service.rc|f4235812cbc4daebb0b4248c127750ef956ba25b
+vendor/lib64/vendor.xiaomi.hardware.dtool@1.0.so|1933aa6786e99551b56ba1d77cb34ecbbee29fdb
 
 # NFC configs
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-nxp_RF.conf
 
 # Sensors
 vendor/bin/init.qcom.sensors.sh
